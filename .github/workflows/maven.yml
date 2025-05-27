@@ -27,11 +27,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: Package
-          path: build/libs
+#      - name: Upload build artifacts
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: Package
+#          path: build/libs
+
+      - name: Build with Gradle
+        run: ./gradlew build
 
       - name: Login to Docker Registry
         uses: docker/login-action@v3
