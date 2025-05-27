@@ -59,4 +59,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: docker-io/aldusscerv/aldohubrepo/users-0.0.1-SNAPSHOT
+          tags: docker-io/aldusscerv/aldohubrepo
